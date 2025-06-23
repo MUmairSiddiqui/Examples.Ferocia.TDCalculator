@@ -93,19 +93,19 @@ namespace Examples.Ferocia.TDCalculator.Apps.ConsoleApp
         private int GetInterestCompound()
         {
             Console.WriteLine("Enter the interest maturity.");
-            Console.WriteLine("[1] for Monthy");
-            Console.WriteLine("[2] for quartely");
-            Console.WriteLine("[3] for annually");
+            Console.WriteLine("[12] for Monthy");
+            Console.WriteLine("[4] for quartely");
+            Console.WriteLine("[1] for annually");
 
-            IEnumerable<int> options = [1, 4, 12];
+            IEnumerable<int> options = [12, 4, 1];
             var isValid = int.TryParse(Console.ReadLine(), out int interestMaturity);
 
             while (!isValid || !options.Contains(interestMaturity))
             {
                 Console.WriteLine("Invalid entry. Pelase enter the interest maturity.");
-                Console.WriteLine("[1] for Monthy");
-                Console.WriteLine("[2] for quartely");
-                Console.WriteLine("[3] for annually");
+                Console.WriteLine("[12] for Monthy");
+                Console.WriteLine("[4] for quartely");
+                Console.WriteLine("[1] for annually");
                 isValid = int.TryParse(Console.ReadLine(), out interestMaturity);
             }
             //_logger.LogInformation($"Interest maturity: {interestMaturity}");
