@@ -14,4 +14,10 @@
     <ProjectReference Include="..\Examples.Ferocia.TDCalculator.Domain\Examples.Ferocia.TDCalculator.Domain.csproj" />
   </ItemGroup>
 
+	<ItemGroup>
+		<InternalsVisibleTo Include="Examples.Ferocia.TDCalculator.Tests" />
+		<!--<AssemblyAttribute Include="System.Runtime.CompilerServices.InternalsVisibleTo">
+			<_Parameter1>Examples.Ferocia.TDCalculator.Tests</_Parameter1>
+		</AssemblyAttribute>-->
+	</ItemGroup>
 </Project>

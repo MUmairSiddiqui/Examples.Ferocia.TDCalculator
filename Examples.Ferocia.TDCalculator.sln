@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Examples.Ferocia.TDCalculat
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Examples.Ferocia.TDCalculator.Services", "Examples.Ferocia.TDCalculator.Services\Examples.Ferocia.TDCalculator.Services.csproj", "{5CED781C-EE03-46D1-A2DA-D41DCA78EAAD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Examples.Ferocia.TDCalculator.Tests", "Tests\Examples.Ferocia.TDCalculator.Tests\Examples.Ferocia.TDCalculator.Tests.csproj", "{C140A2CC-02AB-4F2B-B74F-0E6F2A44A338}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{5CED781C-EE03-46D1-A2DA-D41DCA78EAAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5CED781C-EE03-46D1-A2DA-D41DCA78EAAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5CED781C-EE03-46D1-A2DA-D41DCA78EAAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C140A2CC-02AB-4F2B-B74F-0E6F2A44A338}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C140A2CC-02AB-4F2B-B74F-0E6F2A44A338}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C140A2CC-02AB-4F2B-B74F-0E6F2A44A338}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C140A2CC-02AB-4F2B-B74F-0E6F2A44A338}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
