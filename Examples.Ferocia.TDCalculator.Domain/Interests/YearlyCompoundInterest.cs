@@ -7,12 +7,12 @@ using System.Threading.Tasks;
 
 namespace Examples.Ferocia.TDCalculator.Domain.Interests
 {
-    public class CompoundInterest : Interest
+    public class YearlyCompoundInterest : Interest
     {
         public int InvestmentYears { get; private set; }
         public InterestCompound Compounded { get; private set; }
 
-        public CompoundInterest(
+        public YearlyCompoundInterest(
             double initialDeposit,
             double interestRate,
             int investmentYears,
