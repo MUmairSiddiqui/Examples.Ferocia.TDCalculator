@@ -1,4 +1,6 @@
-﻿using Examples.Ferocia.TDCalculator.Domain.Services;
+﻿using Examples.Ferocia.TDCalculator.Domain.Enums;
+using Examples.Ferocia.TDCalculator.Domain.Interests;
+using Examples.Ferocia.TDCalculator.Domain.Services;
 using Examples.Ferocia.TDCalculator.Services.InterestServices;
 
 namespace Examples.Ferocia.TDCalculator.Tests.Services
@@ -13,10 +15,22 @@ namespace Examples.Ferocia.TDCalculator.Tests.Services
             _compoundInterestCalculatorService = new CompoundInterestCalculatorService();
         }
 
-        [Test]
-        public void Test1()
+        //[Test]
+        [TestCase(10000, 1.10, 3, InterestCompound.Monthly, ExpectedResult = 10335)]
+        public int Calculate_ExpectedCompoundedAmount(
+            double initialDeposit,
+            double interestRate,
+            int investmentYears,
+            InterestCompound interestCompound)
         {
-            Assert.Pass();
+            var compoundedAmount = _compoundInterestCalculatorService.CalculateCompoundedAmount(
+                new YearlyCompoundInterest(
+                    initialDeposit,
+                    interestRate,
+                    investmentYears,
+                    interestCompound));
+
+            return (int)Math.Round(compoundedAmount);
         }
     }
 }
