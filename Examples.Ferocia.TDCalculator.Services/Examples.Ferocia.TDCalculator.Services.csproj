@@ -6,4 +6,8 @@
     <Nullable>enable</Nullable>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Examples.Ferocia.TDCalculator.Domain\Examples.Ferocia.TDCalculator.Domain.csproj" />
+  </ItemGroup>
+
 </Project>
